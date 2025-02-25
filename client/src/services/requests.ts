@@ -43,7 +43,7 @@ const configLangEn = {
 
 const getPopularMovies = () => {
   return axios
-    .get("https://api.themoviedb.org/3/movie/popular", config)
+    .get("/api/proxy", config)
     .then((response) => response.data.results)
     .catch((error) => console.error(error));
 };
